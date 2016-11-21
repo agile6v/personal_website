@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>agile6v website</title>
+	<link rel="Shortcut Icon" href="/favicon.ico" type="image/x-icon" />
+	<meta http-equiv="pragma" content="no-cache" />
+	<meta name="robots" content="all" />
+	<meta name="MSSmartTagsPreventParsing" content="true" />
+	<meta http-equiv="imagetoolbar" content="false" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->	
+	<style>
+		* { padding: 0; margin: 0; }
+		body { font-family: 'Lora', sans-serif; color: #333; }
+		p {  font-family: Helvetica; font-size: 16px; line-height: 24px; margin-bottom: 22px; -webkit-font-smoothing: antialiased; }
+		a {  color: #c00; font-weight: bold; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.3); }
+		a:hover { color: #990000; border-bottom: 1px solid rgba(255,255,255,1); }
+		#navigation { width: 400px; padding: 10px 0 0 150px; margin: 0 auto; }
+		#about { width: 900px; padding: 30px 0 0 30px; margin: 0 auto  !important;}
+		#header { margin-top: 2.029em; margin-left: 500px; margin-right: auto; width: 940px; position: relative; height: 4em; font-size: 25px;}
+		#brand { position: absolute; bottom: 20px; left: 15px; }
+		#navi { position: absolute; right:0; bottom:0; }
+		@media (max-width: 767px) {
+			#monogram { position: relative; width: auto; padding: 20px; margin: 0; }
+			#about { position: relative; width: auto; padding: 20px; margin: 0 !important; }
+			background-image { opacity: 0.2; }
+		}
+
+		blockquote {
+		  background: #f9f9f9;
+		  border-left: 10px solid #ccc;
+		  margin: 3.0em 11.5em 1em 13em;
+		  padding: 0.5em 10px;
+		  quotes: "\201C""\201D""\2018""\2019";
+		}
+		blockquote:before {
+		  color: #ccc;
+		  content: open-quote;
+		  font-size: 4em;
+		  line-height: 0.1em;
+		  margin-right: 0.25em;
+		  vertical-align: -0.4em;
+		}
+		blockquote p {
+		  display: inline;
+		}
+	</style>
+</head>	
+    
+<body>
+
+<div id="header">
+	<div id="brand">
+		<h1>agile6v</h1>
+	</div>
+	<div id="navi"></div>
+</div>
+
+<div id="navigation">
+	<p>
+		<b><span style="font-weight: normal;"><a href="https://github.com/agile6v" target="_blank">Github</a>&nbsp;|&nbsp;</span></b>
+		<b><span style="font-weight: normal;"><a href="http://twitter.com/agile6v" target="_blank">Twitter</a>&nbsp;|&nbsp;</span></b>
+		<b><span style="font-weight: normal;"><a href="/" target="_blank">Blog</a></span></b>
+	</p>
+</div>
+
+<div class="clear">
+	<blockquote>If you haven't failed today, you've failed.</blockquote></div>
+</div>
+
+<div id="about">
+	<p>Hi, My name is liuwei and live in Beijing. </p>
+	<p>I'm a software engineer at <a href="http://www.yongche.com">YiDao</a> & working on the backend development.</p>
+	<p>I specialize in C & PHP, I have some limited experience with Java, Golang, HTML/CSS, Android.</p>
+	<p>I'm familiar with Nginx & I was working on Nginx custom development for over 3 years. Despite in the last year of work (2015) is not related to Nginx, but I'm also keeping an eye on Nginx Community.<p>
+	<p>My email address is agile6v, followed by the “at” sign, followed by “agile6v.com”</p>
+</div>
+
+<!--include jquery & backstretch-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.backstretch.min.js"></script>
+<script type="text/javascript">
+
+<!-- reserved -->
+$(function(){
+     $(window).resize(function(){
+         if($(this).width() >= 767){
+             $.backstretch("", {speed: 150});
+         }
+      })
+      .resize();//trigger resize on page load
+});
+</script>
+
+</body>	
+</html>
