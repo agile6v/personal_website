@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Understanding Nginx rewrite"
+title:      "Understanding Nginx Rewrite"
 subtitle:   " \"nginx rewrite rules.\""
 date:       2017-03-10 18:00:00
 author:     "Agile6v"
@@ -59,12 +59,9 @@ permanent
     returns a permanent redirect with the 301 code.
 ```
 
-
-It is not easy to understand the last and break. However, there is a simple way to quickly understand them.
-
-The last flag is like "continue" we used when writing C programs.
-
-The break flag is like "break" we used when writing C programs.
+It is not easy to understand the last and break. However, there is a simple way to quickly understand them.<br/>
+The last flag is like "continue" we used when writing C programs.<br/>
+The break flag is like "break" we used when writing C programs.<br/>
 
 
 ##### Third, Through a few examples to understand the flag of the last or break.
