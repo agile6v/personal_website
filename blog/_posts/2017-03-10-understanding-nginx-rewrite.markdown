@@ -26,7 +26,7 @@ Context:   server, location, if
 From the official document we learned the following points：
 
 
-```nginx
+```
 1. If the specified regular expression matches a request URI, URI is changed
 as specified in the replacement string.
 2. The rewrite directives are executed sequentially in order of their
@@ -72,7 +72,7 @@ The break flag is like "break" we used when writing C programs.
 
 ###### Example 1: rewrite with break inside server block
 
-```nginx
+```shell
 server {
     listen 80;
     server_name localhost;
@@ -100,7 +100,7 @@ This is test_1 location
 
 
 ###### Example 2: rewrite with last inside server block
-```nginx
+```shell
 server {
     listen 80;
     server_name localhost;
@@ -127,7 +127,7 @@ This is test_1 location
 ```
 
 ###### Example 3: rewrite with last inside location block
-```nginx
+```shell
 server {
     listen 80;
     server_name localhost;
@@ -159,7 +159,7 @@ This is test_1 location
 
 
 ###### Example 4: rewrite with last inside location block
-```nginx
+```shell
 server {
     listen 80;
     server_name localhost;
@@ -191,7 +191,7 @@ This is default location
 
 ###### Example 5: rewrite with last inside location block
 
-```nginx
+```shell
 server {
     listen 80;
     server_name localhost;
