@@ -219,4 +219,4 @@ This is default location
 
 ##### Finally, through a picture to understand both last and break.
 
-![](./img/ngx_rewrite.png)
+![img](/img/ngx_rewrite.png)
