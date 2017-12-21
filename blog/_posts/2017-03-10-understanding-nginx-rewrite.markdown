@@ -53,6 +53,7 @@ Context:   server, location, if
 NOTE:
 
 1. regex匹配的是uri，不包含hostname和query string，默认query string是被追加到replacement末尾，如果不希望在replacement末尾追加请求的query string，可以在replacement的末尾加一个"?"。
+
 ```
 server {
  	rewrite ^/mi_one/(.*)$  /mi/$1;
