@@ -7,6 +7,7 @@ builddrafts: false
 canonifyurls: false
 contentdir: "content"
 layoutdir: "layouts"
+publishdir: "blog"
 
 permalinks:
     posts: /:year/:month/:day/:slug/
