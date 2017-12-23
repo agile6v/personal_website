@@ -1,4 +1,4 @@
-baseurl: "http://www.agile6v.com/"
+baseurl: "https://www.agile6v.com/"
 languageCode: "zh-CN"
 title: "agile6v"
 copyright: "Copyright (c) 2017. All rights reserved."
@@ -13,25 +13,25 @@ permalinks:
     posts: /:year/:month/:day/:slug/
 Taxonomies:
     tag: "tags"
-    category: "articles"
+    category: "categories"
 params:
     CopyrightHTML: "Copyright &#xA9; 2017. All Rights Reserved."
     GitHubUser: "agile6v"
     SidebarRecentLimit: 8
-    DateForm: "2017年01月01日"
+    DateForm: "2006年01月02日"
     Description: "Keep looking. Don't settle."
     Categories:
-        - "技术文章"
-        - "其他"
+        - "Articles"
+        - "other"
     ShowRelatedPost: true
 menu:
     main:
-        - Name: "归档"
+        - Name: "archive"
           Pre: "<i class='fa fa-heart'></i>"
           Weight: -110
           Identifier: "post"
           URL: "/post/"
-        - Name: "关于"
+        - Name: "About"
           Pre: "<i class='fa fa-road'></i>"
           Identifier: "about"
           Weight: -100

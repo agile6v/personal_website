@@ -12,7 +12,7 @@
 <meta property="og:title" content="{{ .Site.Title }}">
 {{- end -}}
 {{- else if eq .URL "/post/" -}}
-<meta property="og:title" content="归档 - {{ .Site.Title }}">
+<meta property="og:title" content="archive - {{ .Site.Title }}">
 {{- else if eq .URL "/tags/" -}}
 <meta property="og:title" content="分类 - {{ .Site.Title }}">
 {{- else if in .URL "/tags/" -}}
@@ -27,7 +27,7 @@
     {{ if eq .URL "/" }}
     {{ .Site.Title }}
     {{ else if eq .URL "/post/" }}
-    归档 - {{ .Site.Title }}
+    archive - {{ .Site.Title }}
     {{ else if eq .URL "/tags/" }}
     分类 - {{ .Site.Title }}
     {{ else if in .URL "/tags/" }}

@@ -5,17 +5,17 @@
         <article class="post single">
 
             <header>
+                <h1 class="post-title">{{ .Title }}</h1>
                 <div class="post-date">
                     {{ .Date.Format .Site.Params.DateForm }} 
                 </div>
-                <h1 class="post-title">{{ .Title }}</h1>
             </header>
 
-            <div class="post-content">
+            <div class="post-content" style="margin-top: 30px;">
                 {{ .Content }}
             </div>
             
-            <div style="border: 1px dashed #e0e0e0; margin-bottom: 15px; padding: 10px 10px 10px 10px; background-color: #fffeee; background-repeat: no-repeat; background-attachment: scroll; background-position: 1% 50%; -moz-background-size: auto auto; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;">
+            <div style="border: 1px dashed #e0e0e0; margin-bottom: 15px; margin: 60px 0px 20px 0px; padding: 10px 10px 10px 10px; background-color: #fffeee; background-repeat: no-repeat; background-attachment: scroll; background-position: 1% 50%; -moz-background-size: auto auto; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;">
                 <div>
                     <p style="margin-top:0px;">作者：<a target="_blank" href="https://www.agile6v.com/">agile6v</a>
                     <br />本文出处：<a target="_blank" href="{{ .Permalink }}">{{ .Permalink }}</a>
@@ -65,7 +65,7 @@
                         <li class="previous disabled"><a href="#"><span aria-hidden="true">&larr;</span> Prev</a></li>
                         {{ end }}
 
-                        <li><a href="/articles/">All Posts</a></li>
+                        <li><a href="/categories/articles/">All Posts</a></li>
 
                         {{ if .Next }}
                         <li class="next"><a href="{{ .Next.RelPermalink }}">Next <span aria-hidden="true">&rarr;</span></a></li>
